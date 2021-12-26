@@ -1,6 +1,6 @@
-const express = require("express");
-const product = require("./api/product");
+import express from "express";
+import product from "./src/product";
 const app = express();
 const PORT = process.env.PORT || 5050;
-app.use("/api/product", product);
+app.use("/v1", product);
 app.listen(PORT, () => console.log("server running"));

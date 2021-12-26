@@ -1,7 +1,7 @@
-const exp = require("express");
-const router = exp.Router();
+import { Router, Request, Response } from "express";
+const router = Router();
 
-router.get("/", async (req, res) => {
+router.get("/", async (req: Request, res: Response) => {
   try {
     res.json({
       status: 200,
@@ -13,4 +13,4 @@ router.get("/", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
