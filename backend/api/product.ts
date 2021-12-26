@@ -1,5 +1,5 @@
-const express = require("express");
-const router = express.Router();
+const exp = require("express");
+const router = exp.Router();
 
 router.get("/", async (req, res) => {
   try {
@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
     });
   } catch (error) {
     console.error(error);
-    return res.statys(500), send("Server error");
+    return res.status(500);
   }
 });
 
