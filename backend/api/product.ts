@@ -5,7 +5,7 @@ router.get("/", async (req, res) => {
   try {
     res.json({
       status: 200,
-      message: "Get data has success",
+      message: "Get data has success with typescript",
     });
   } catch (error) {
     console.error(error);
